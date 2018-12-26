@@ -1,0 +1,300 @@
+
+
+
+/* 初始状态 向下100% */
+.screen-5__subheading_animate_init,
+.screen-4__subheading_animate_init,
+.screen-3__subheading_animate_init,
+.screen-2__subheading_animate_init,
+.screen-1__shadow_animate_init,
+.screen-1__heading_animate_init{
+    opacity: 0;
+    transform: translate(0, 100%);
+      /*自己家的  */
+    transition:all 1s;
+}
+.screen-5__subheading_animate_done,
+.screen-4__subheading_animate_done,
+.screen-3__subheading_animate_done,
+.screen-2__subheading_animate_done,
+.screen-1__shadow_animate_done,
+.screen-1__heading_animate_done{
+    opacity: 1;
+    transform: none;
+    transition:all 1s;
+}
+
+
+/* 初始状态 向上100% */
+.screen-5__heading_animate_init,
+.screen-4__heading_animate_init,
+.screen-3__heading_animate_init,
+.screen-2__heading_animate_init,
+.screen-1__phone_animate_init{
+    opacity: 0;
+    transform: translate(0, -100%);
+}
+.screen-5__heading_animate_done,
+.screen-4__heading_animate_done,
+.screen-3__heading_animate_done,
+.screen-2__heading_animate_done,
+.screen-1__phone_animate_done{
+    opacity: 1;
+    transform: none;
+    transition:all 1s;
+}
+.screen-2__phone,.screen-3__phone{
+    transition: all 1s
+}
+.screen-3__phone_animate_done,
+.screen-2__phone_animate_done{
+    opacity: 1;
+    transform: none;
+    transform: translate(0,0);
+}
+.screen-3__phone_animate_init,
+.screen-2__phone_animate_init{
+    opacity: 0;
+    transform: translate(0, 100%);
+}
+
+.screen-2__point_i_1_animate_init{
+    opacity: 0;
+    transform: translate(-100%, 0);
+}
+.screen-2__point_i_2_animate_init{
+    opacity: 0;
+    transform: translate(100%, 0);
+}
+.screen-2__point_i_3_animate_init{
+    opacity: 0;
+    transform: translate(100%, 0);
+}
+
+.screen-2__point_i_1_animate_done{
+    opacity: 1;
+    transform: none;
+    transition:all 1s 1.5s;
+}
+.screen-2__point_i_2_animate_done{
+    opacity: 1;
+    transform: none;
+    transition:all 1s 2s;
+}
+.screen-2__point_i_3_animate_done{
+    opacity: 1;
+    transform: none;
+    transition:all 1s 2.5s;
+}
+.screen-2__point:before{
+    -webkit-animation: bounce 2s infinite ease-in-out 1s;
+}
+.screen-2__point:after{
+    -webkit-animation: bounce 2s infinite ease-in-out 0s;
+}
+
+.screen-2__point_i_1:after,
+.screen-2__point_i_1:before{
+    right: 0px;
+}
+.screen-2__point_i_3:after,
+.screen-2__point_i_3:before,
+.screen-2__point_i_2:after,
+.screen-2__point_i_2:before{
+    left: 0px;
+}
+.screen-2__point:after,
+.screen-2__point:before{
+    content: ' ';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 8px;
+    background-color: rgba(255,0,0,.4);
+    border-radius: 50%;
+}
+
+.screen-3__features_animate_init{
+    opacity: 0;
+    transform:scale(.5);
+}
+.screen-3__features_animate_done{
+    opacity: 1;
+    transform:scale(1);
+    transition:all 1s;
+}
+.screen-3__features-item{
+    transition:all .5s;
+    cursor: pointer;
+}
+.screen-3__features-item:hover{
+    transform:scale(1.05);
+    border-color: #fff;
+}
+.screen-3__features_animate_done .screen-3__features-item_i_1{
+    -webkit-animation: rock 2s infinite ease-in-out .5s;
+}
+.screen-3__features_animate_done .screen-3__features-item_i_2{
+    -webkit-animation: rock 2s infinite ease-in-out .8s;
+}
+.screen-3__features_animate_done .screen-3__features-item_i_3{
+    -webkit-animation: rock 2s infinite ease-in-out 1.3s;
+}
+.screen-3__features_animate_done .screen-3__features-item_i_4{
+    -webkit-animation: rock 2s infinite ease-in-out 1.5s;
+}
+
+
+.screen-4__subheading,
+.screen-4__heading{
+    transition: all 1s
+}
+
+.screen-4__heading_animate_init{
+    opacity: 0;
+    transform: translate(0,-100%);
+}
+.screen-4__heading_animate_done{
+    opacity: 1;
+    transform: translate(0,0);
+}
+.screen-4__subheading_animate_init{
+    opacity: 0;
+    transform: translate(0,100%);
+}
+
+ .screen-4__type-item_i_1 {
+    transition: all 1s .7s;
+}
+
+ .screen-4__type-item_i_2 {
+    transition: all 1s .9s;
+}
+
+.screen-4__type-item_i_3 {
+    transition: all 1s 1.1s;
+}
+
+.screen-4__type-item_i_4{
+    transition: all 1s 1.3s;
+}
+
+.screen-4__type-item_i_1_animate_init,
+.screen-4__type-item_i_2_animate_init,
+.screen-4__type-item_i_3_animate_init,
+.screen-4__type-item_i_4_animate_init
+ {
+     opacity: 0;
+   transform: translate(0,100%);
+}
+
+.screen-4__type-item_i_1_animate_done,
+.screen-4__type-item_i_2_animate_done,
+.screen-4__type-item_i_3_animate_done,
+.screen-4__type-item_i_4_animate_done
+ {
+    opacity: 1;
+   transform: translate(0,0);
+}
+
+/* -第5屏动画- */
+
+.screen-5__heading,
+.screen-5__subheading,
+.screen-5__back{
+    transition: all 1s
+}
+
+
+.screen-5__heading_animate_init{
+    opacity: 0;
+    transform: translate(0,-100%);
+}
+.screen-5__back_animate_init,
+.screen-5__subheading_animate_init{
+    opacity: 0;
+    transform: translate(0,100%);
+}
+.screen-5__back_animate_done,
+.screen-5__subheading_animate_done{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.screen-5__heading_animate_done{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.header{
+    transition: all 1s;
+}
+.header__logo.header__logo_status_animate{
+    color: #fff
+}
+.header.header_status_black{
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    /* transition:all .5s; */
+}
+/* 层级问题 .heander.***   下面改写只能也添加完整class   .header.*** */
+.header_status_black .header__nav-item{
+    color: #fff;
+}
+.header_status_black .header__nav-item_status_active{
+    color: red
+}
+
+.header__nav-item{
+    transition: all 1s
+}
+
+.header__nav-item.header__nav-item_status_active{
+    color: red;
+}
+
+
+.header__nav-item-tip{
+    transition:all .5s;
+}
+.header__nav-item-tip.header__nav-item-tip_status_active{
+    color: red
+}
+
+.outline{
+    transition:all 1s;
+    transform: translate(100%,0);
+}
+
+.outline.outline_status_in{
+    transform: translate(0,0);
+}
+.outline__item{
+    transition: all 1s;
+}
+.outline__item.outline__item_status_active{
+    color: red;
+}
+
+/* 帧动画定义 */
+@-webkit-keyframes bounce {
+    0%, 100% {
+        -webkit-transform: scale(0.0)
+    }
+    50% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@-webkit-keyframes rock{
+    0%{ transform:rotate(0deg) }
+    10%{ transform:rotate(3deg) }
+    20%{ transform:rotate(-3deg) }
+    30%{ transform:rotate(2deg) }
+    40%{ transform:rotate(-2deg) }
+    50%{ transform:rotate(1deg) }
+    60%{ transform:rotate(-1deg) }
+    70%{ transform:rotate(0deg) }
+    100%{ transform:rotate(0deg) }
+}
